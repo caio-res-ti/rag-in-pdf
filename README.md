@@ -17,7 +17,12 @@ Em caso de problemas com o requirements.txt:
 Atualizar lista de requirements se baixar mais libs:
 ```pip freeze > requirements.txt```
 
-Fiz alguns comentários enxutos que podem ajudar a entender o funcionamento de cada código.
+*Note que o PDF possui camada de texto. É um PDF-A nato digital. Use txt ou PDF-A*
+
+Fiz alguns comentários enxutos que podem ajudar a entender o funcionamento de cada código. Mas o princípio é esse:
+
+![alt text](data/image.png)
+
 
 Eu sempre instalo o Ollama no Linux, por conveniência e por ser o mais estável, mas já testei ele no Windows e funcionou. No docker ainda não testei.
 
@@ -26,6 +31,14 @@ Para instalar o Ollama:
 https://github.com/ollama/ollama
 
 Recomendação: tenha uma GPU, porque se não tiver vai ser lento, se não tiver garanta mais de 16GB RAM para sua CPU. Instale o CUDA e outros pacotes, eu recomendaria fazer tudo no WSL2 ou conectar o vscode em um servidor Ubuntu que tenha GPU.
+
+CLI do Ollama:
+
+Derrubar modelo:
+```curl http://10.159.11.24:11434/api/generate -d '{"model": "gemma2:latest", "keep_alive": 0}'```
+
+Rodar modelo:
+```curl http://10.159.11.24:11434/api/generate -d '{"model": "gemma2:latest", "keep_alive": -1}'```
 
 Para API do Gemini:
 
