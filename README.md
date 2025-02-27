@@ -45,3 +45,5 @@ Para API do Gemini:
 Eu estou usando o Gemini 1.5 Flash, que é gratuito com limitações de requisição. Só gerar a chave no site do google e se divertir.
 
 https://ai.google.dev/gemini-api/docs/api-key?hl=pt-br
+
+Na pasta test tenho um arquivo main.py que estava testando manter o database carregado e fazer varias perguntas durante a execução pelo terminal, ele funciona, só não esta otimizado 100%.
