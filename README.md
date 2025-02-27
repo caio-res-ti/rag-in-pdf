@@ -1,1 +1,34 @@
+# Instalar o Python 3.12.3 e Criar environment:
 
+Todo o projeto e comandos foram executados em um Linux
+
+Criar environment:
+```python3 -m venv .rag```
+
+Ativar environment:
+```source .rag/bin/activate```
+
+Instalar os requirements do projeto:
+```pip install -r requirements.txt```
+
+Em caso de problemas com o requirements.txt:
+```pip install python-dotenv tiktoken chromadb google-generativeai requests langchain langchain-community pymupdf```
+
+Atualizar lista de requirements se baixar mais libs:
+```pip freeze > requirements.txt```
+
+Fiz alguns comentários enxutos que podem ajudar a entender o funcionamento de cada código.
+
+Eu sempre instalo o Ollama no Linux, por conveniência e por ser o mais estável, mas já testei ele no Windows e funcionou. No docker ainda não testei.
+
+Para instalar o Ollama:
+
+https://github.com/ollama/ollama
+
+Recomendação: tenha uma GPU, porque se não tiver vai ser lento, se não tiver garanta mais de 16GB RAM para sua CPU. Instale o CUDA e outros pacotes, eu recomendaria fazer tudo no WSL2 ou conectar o vscode em um servidor Ubuntu que tenha GPU.
+
+Para API do Gemini:
+
+Eu estou usando o Gemini 1.5 Flash, que é gratuito com limitações de requisição. Só gerar a chave no site do google e se divertir.
+
+https://ai.google.dev/gemini-api/docs/api-key?hl=pt-br
