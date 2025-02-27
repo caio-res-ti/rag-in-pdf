@@ -35,10 +35,10 @@ Recomendação: tenha uma GPU, porque se não tiver vai ser lento, se não tiver
 CLI do Ollama:
 
 Derrubar modelo:
-```curl http://10.159.11.24:11434/api/generate -d '{"model": "gemma2:latest", "keep_alive": 0}'```
+```curl http://ip:11434/api/generate -d '{"model": "gemma2:latest", "keep_alive": 0}'```
 
 Rodar modelo:
-```curl http://10.159.11.24:11434/api/generate -d '{"model": "gemma2:latest", "keep_alive": -1}'```
+```curl http://ip:11434/api/generate -d '{"model": "gemma2:latest", "keep_alive": -1}'```
 
 Para API do Gemini:
 
